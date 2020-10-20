@@ -2,6 +2,7 @@ package me.tylerdclark.quinn;
 
 import me.tylerdclark.quinn.command.CommandContext;
 import me.tylerdclark.quinn.command.ICommand;
+import me.tylerdclark.quinn.command.commands.HastCommand;
 import me.tylerdclark.quinn.command.commands.HelpCommand;
 import me.tylerdclark.quinn.command.commands.PingCommand;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
@@ -19,6 +20,7 @@ public class CommandManager {
     public CommandManager(){
         addCommand(new PingCommand());
         addCommand(new HelpCommand(this));
+        addCommand(new HastCommand());
     }
 
     private void addCommand(ICommand cmd) {
