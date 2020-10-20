@@ -2,9 +2,7 @@ package me.tylerdclark.quinn;
 
 import me.tylerdclark.quinn.command.CommandContext;
 import me.tylerdclark.quinn.command.ICommand;
-import me.tylerdclark.quinn.command.commands.HastCommand;
-import me.tylerdclark.quinn.command.commands.HelpCommand;
-import me.tylerdclark.quinn.command.commands.PingCommand;
+import me.tylerdclark.quinn.command.commands.*;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
 
@@ -20,7 +18,9 @@ public class CommandManager {
     public CommandManager(){
         addCommand(new PingCommand());
         addCommand(new HelpCommand(this));
-        addCommand(new HastCommand());
+        addCommand(new HasteCommand());
+        addCommand(new KickCommand());
+        addCommand(new MemeCommand());
     }
 
     private void addCommand(ICommand cmd) {
