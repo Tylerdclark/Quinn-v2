@@ -18,11 +18,12 @@ repositories {
 }
 
 dependencies {
-    compile group: 'net.dv8tion', name: 'JDA', version: '4.2.0_209'
-    compile group: 'com.jagrosh', name: 'jda-utilities', version: '3.0.4'
-    compile group: 'me.duncte123', name: 'botCommons', version: '1.0.88'
-    compile("ch.qos.logback:logback-classic:1.2.3")
-    compile 'io.github.cdimascio:java-dotenv:5.2.2'
-}
+    implementation group: 'net.dv8tion', name: 'JDA', version: '4.2.0_209'
+    implementation group: 'com.jagrosh', name: 'jda-utilities', version: '3.0.4'
+    implementation group: 'me.duncte123', name: 'botCommons', version: '1.0.88'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    implementation group: 'io.github.cdimascio', name: 'java-dotenv', version: '5.2.2'
+    implementation group: 'club.minnced', name:'discord-webhooks', version:'0.5.0'
+ }
 
 compileJava.options.encoding = 'UTF-8'
