@@ -1,7 +1,8 @@
-package me.tylerdclark.quinn;
+package dev.tylerdclark.quinn;
 
-import me.tylerdclark.quinn.command.CommandContext;
-import me.tylerdclark.quinn.command.ICommand;
+import dev.tylerdclark.quinn.command.CommandContext;
+import dev.tylerdclark.quinn.command.ICommand;
+import dev.tylerdclark.quinn.command.commands.*;
 import me.tylerdclark.quinn.command.commands.*;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;

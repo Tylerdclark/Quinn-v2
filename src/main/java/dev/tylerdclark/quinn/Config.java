@@ -1,4 +1,4 @@
-package me.tylerdclark.quinn;
+package dev.tylerdclark.quinn;
 
 import io.github.cdimascio.dotenv.Dotenv;
 

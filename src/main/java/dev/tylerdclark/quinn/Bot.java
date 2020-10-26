@@ -1,4 +1,4 @@
-package me.tylerdclark.quinn;
+package dev.tylerdclark.quinn;
 
 import me.duncte123.botcommons.web.WebUtils;
 import net.dv8tion.jda.api.JDA;
